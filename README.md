@@ -19,6 +19,7 @@ STEP 4:
 Use IQR score method to remove outliers that lies below or above the range
 
 ## CODE:
+```
 import pandas as pd
 df=pd.read_csv("weight.csv")
 df
@@ -39,7 +40,7 @@ IQR=q3-q1
 df2_new=df2[((df2>=q1-1.5*IQR)&(df2<=q3+1.5*IQR)).all(axis=1)]
 df2_new.boxplot()
 df2_new
-
+```
 # OUTPUT:
 ## READING THE DATA
 ![C1](https://user-images.githubusercontent.com/94219582/161584321-fd825f82-6171-4a26-a928-76477aeb5a32.PNG)
