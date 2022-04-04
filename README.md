@@ -19,11 +19,12 @@ STEP 4:
 Use IQR score method to remove outliers that lies below or above the range
 
 ## CODE:
+
+```
 '''
 Developed by: Sithi hajara I
 Register number:212221230102
 '''
-```
 import pandas as pd
 df=pd.read_csv("weight.csv")
 df
